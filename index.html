@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synapse - Redefining Technology</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        main .text-content {
+            font-size: 1rem;
+        }
+
+        main .image-content img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #f4f4f4;
+        }
+
+        footer .social-links a {
+            margin-right: 1rem;
+            text-decoration: none;
+            color: #333;
+        }
+
+        footer .copyright {
+            font-size: 0.9rem;
+        }
+
+        /* Media Queries */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1024px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            main {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        /* Bonus: Animations */
+        header, footer, main {
+            transition: all 0.3s ease;
+        }
+
+        main .image-content img {
+            transition: transform 0.3s ease;
+        }
+
+        main .image-content img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Synapse</div>
+                <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="text-content">
+            <h1>Welcome to Synapse</h1>
+            <p>Synapse is at the forefront of technological innovation, delivering cutting-edge solutions to redefine the future. Join us as we create unparalleled advancements in AI, software engineering, and beyond.</p>
+        </div>
+        <div class="image-content">
+            <img src="#" alt="Synapse Innovation">
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <div class="copyright">&copy; 2025 Synapse. Redefining Technology.</div>
+    </footer>
+</body>
+</html>
